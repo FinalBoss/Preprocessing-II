@@ -1,1 +1,51 @@
 // Mixins in here
+
+.desktopFlex(@adjust, @justify, @flow){
+
+display: flex;
+justify-content: @justify;
+align-items: @adjust;
+flex-flow: @flow;
+
+
+
+
+}
+
+.Enhance(@adjust){
+
+flex: @adjust;
+
+}
+
+.signup(){
+
+    background-color: teal;
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    
+    
+&:hover{
+
+    background-color: darken(teal, 5%);
+
+}
+
+
+
+
+}
+
+
+
+.mobileFlex( @justify, @direction, @align){
+
+    display: flex;
+    justify-content: @justify;
+    flex-direction: @direction;
+    align-items: @align;
+    
+    }
