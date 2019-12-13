@@ -1,18 +1,19 @@
 // Navigation Styles here
 
-.contenthead {
-
-    display: flex;
-    
-    
-
-}
 
 header {
     
     display: flex;
     width: 100%;
     justify-content: space-between;
+    margin: 2px;
+
+    @media @mobile {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
 
@@ -21,7 +22,7 @@ nav {
     width: 100%;
     justify-content: space-evenly;
     word-spacing: 1.3rem;
-
+    
 
 }
 
@@ -30,11 +31,25 @@ nav {
     width: 30%;
 justify-items: flex-start;
 
+@media @mobile {
+
+justify-items: center;
+
+}
+
 }
 
 h1 {
 
 width: 100%;
+
+@media @mobile {
+
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+
+}
 
 }
 
@@ -47,6 +62,21 @@ a {
     justify-items: flex-end;
     word-spacing: 0%;
     
+    @media @mobile {
+
+        justify-items: center;
+    }
+}
+
+header .text-content{
+
+    margin: 2px;
 
 }
 
+.nav-text-content{
+
+    border-bottom: 2px dashed @navigation-border;
+    
+
+}
